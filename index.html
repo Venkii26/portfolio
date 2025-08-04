@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <style>
+    body {
+      background-color: #0d1117;
+      color: white;
+      
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .logo {
+      color: #00f0ff;
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-decoration: none;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #00f0ff;
+    }
+
+    .multiple-text {
+      color: #00f0ff;
+      font-weight: bold;
+    }
+
+    .btn-custom {
+      background-color: #00f0ff;
+      color: black;
+      border-radius: 25px;
+      padding: 10px 20px;
+      border: none;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .btn-custom:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .social-media a {
+      color: #00f0ff;
+      border: 1px solid #00f0ff;
+      border-radius: 50%;
+      padding: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .social-media a:hover {
+      background-color: #00f0ff;
+      color: black;
+    }
+
+    .profile-img {
+      border-radius: 30px;
+      width: 100%;
+      max-width: 200px;
+    }
+    @media (max-width: 768px) {
+      .text-start-md {
+        text-align: center !important;
+      }
+    }
+  </style>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <div class="container-fluid">
+      <a class="logo" href="#">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="Skills.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-7 text-start text-start-md">
+        <h2>Hello, It's Me</h2>
+        <h1 class="fw-bold">Venkadesh</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p class="mt-3">
+          <strong><span class="multiple-text">B.TECH </span>ARTIFICIAL INTELLIGENCE AND DATA SCIENCE ENGINEER</strong><br><br>
+         <span class="multiple-text"> SUMMER INTERNSHIP</span>&nbsp;&nbsp;&nbsp;<strong>(2024-2025)</strong> <br><strong> 
+* M Squared Software & Services Pvt. Ltd.
+ Technopark Campus, Thiruvananthapuram, 
+Kerala - 695581 </strong> <span class="multiple-text">( 1 Month )</span><br> <strong>* Network System.nagercoil,Tamil Nadu - 629001 <span class="multiple-text">( 3 Month )</span></strong>
+        </p>
+
+        <div class="social-media my-3">
+          <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/venkadesh-c-01478a309/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+   <a href="RESUME.pdf" download="RESUME.pdf" class="btn btn-custom">Download CV</a>
+      </div>
+
+      <div class="col-md-5 text-center mt-4 mt-md-0">
+        <img src="image/portfolio iamge.jpg" class="profile-img" alt="Profile Picture">
+      </div>
+    </div>
+  </section>
+  <script>
+    var typed = new Typed('.multiple-text', {
+      strings: ['FULLSTACK DEVELOPER.', 'PYTHON DEVELOPER.'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    });
+
+    function downloadCV() {
+    
+      window.open("cv.pdf", "_blank");
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

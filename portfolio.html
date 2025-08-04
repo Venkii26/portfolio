@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+ 
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #0d1117;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .navbar {
+      background-color: #0d1117;
+    }
+
+    .navbar-brand {
+      color: #00ffff;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #00ffff;
+    }
+
+    .heading {
+      font-size: 2.5rem;
+      margin-top: 120px;
+      position: relative;
+      
+    }
+
+    .heading span {
+      color: #00ffff;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff66;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .heading {
+        font-size: 2rem;
+        margin-top: 80px;
+      }
+    }
+
+    .logo {
+      color: #00f0ff;
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <div class="container-fluid">
+      <a class="logo" href="#">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="Skills.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="container text-center my-5">
+    <h2 class="heading">LATEST <span>PROJECT</span></h2>
+    <div class="project my-4">
+      <img src="IMG_20241026_0948500-removebg.png" alt="Project Image" />
+    </div>
+  </section>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
